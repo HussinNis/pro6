@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView bottomNumberTextView;
     private TextView answerTextView;
     private TextView mis,tru;
-
+    int sum1=0,sum2=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void chechAns(View view) {
-        int sum1=0,sum2=0;
+
         int userAnswer = Integer.parseInt(answerTextView.getText().toString());
         int correctAnswer = Integer.parseInt(topNumberTextView.getText().toString()) * Integer.parseInt(bottomNumberTextView.getText().toString());
         if(userAnswer==correctAnswer){
